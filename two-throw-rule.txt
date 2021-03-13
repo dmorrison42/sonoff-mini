@@ -1,0 +1,3 @@
+Rule1
+  ON Event#sendPower DO backlog power1 %value; WebSend [192.168.1.11] POWER1 %value% ENDON
+  ON Power1#State DO Event sendPower=%value% ENDON
